@@ -1,0 +1,12 @@
+<body>
+
+    <dashboard-sidebar class="sidebar" (valueChange)='selectedTitle($event)'></dashboard-sidebar>
+
+    <div class="main-content">
+
+
+
+        <dashboard-blog *ngIf="title=='Blog'"></dashboard-blog>
+
+    </div>
+</body>

@@ -1,0 +1,9 @@
+<div class="header">
+    <span class="material-icons" *ngIf="back" (click)="onMyClick()">
+        keyboard_backspace
+    </span>
+    <div class="title-container" *ngIf="!back">{{title}}</div>
+
+    <ng-content></ng-content>
+
+</div>

@@ -1,0 +1,25 @@
+:host {
+  width: 100%;
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+div {
+  margin: 10px;
+}
+
+@media only screen and (min-width: 887px) {
+  :host {
+    width: 50%;
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  :host {
+    width: 33.33333%;
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+  }
+}

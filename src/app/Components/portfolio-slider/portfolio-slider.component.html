@@ -1,0 +1,47 @@
+<section class="portfolio section-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-12">
+                <div class="section-title default text-center">
+                    <div class="section-top">
+                        <h1><span>Project</span><b>Our Works</b></h1>
+                    </div>
+                    <div class="section-bottom">
+                        <div class="text">
+                            <p>Lorem Ipsum Dolor Sit Amet, Conse Ctetur Adipiscing Elit, Sed Do Eiusmod Tempor Ares
+                                Incididunt Utlabore. Dolore Magna Ones Baliqua</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="portfolio-menu">
+                    <!-- Portfolio Nav -->
+                    <ul id="portfolio-nav" class="portfolio-nav tr-list list-inline cbp-l-filters-work">
+                        <li [ngClass]="slectedIndex==i?'cbp-filter-item active':'cbp-filter-item'"
+                            *ngFor="let link of Links; let i = index" (click)="filter(i)">{{link}}</li>
+
+                    </ul>
+                    <!--/ End Portfolio Nav -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+
+                <div #shuffleContainer class="shuffle-container">
+                    <app-portfolio-item *ngFor="let item of data" [index]="item.index" [title]="item.title"
+                        [type]="item.type">
+                    </app-portfolio-item>
+                    <div #shuffleSizer class="sizer-element"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cube Portfolio JS -->
+<script src="assets/js/cubeportfolio.min.js"></script>

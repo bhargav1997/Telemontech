@@ -1,0 +1,22 @@
+.title-container {
+  color: rgba(90, 179, 219, 1);
+  font-size: 24px;
+  font-weight: 700;
+}
+.blog-create {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5%;
+  color: rgba(90, 179, 219, 1);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.material-icons {
+  font-size: 30px;
+  margin-right: 10px;
+}

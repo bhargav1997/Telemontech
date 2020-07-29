@@ -1,0 +1,16 @@
+p {
+  font-family: Lato;
+}
+
+.shuffle-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 10px; */
+  background-color: #fff;
+}
+
+.sizer-element {
+  position: absolute;
+  visibility: hidden;
+  width: 8.3333%;
+}

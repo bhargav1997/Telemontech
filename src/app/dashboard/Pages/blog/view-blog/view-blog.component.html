@@ -1,0 +1,14 @@
+<div class="view-container">
+
+    <div class="card" style="width:300px" *ngFor="let data of blogs">
+        <img class="card-img-top" [src]="data.image" alt="Card image" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title">{{data.title}}</h4>
+
+            <a href="#" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+
+
+
+</div>

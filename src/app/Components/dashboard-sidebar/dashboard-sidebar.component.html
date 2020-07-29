@@ -1,0 +1,29 @@
+<div class="side-container">
+
+    <div class="logo-container">
+
+        Telemontech
+    </div>
+
+    <div class="menu-container">
+
+
+        <div *ngFor="let menu of menuArray" [ngClass]="menu.active?'menu-item-active':'menu-item'"
+            (click)="menuclicked(menu)">
+            <div [ngClass]="menu.active?'top-active':'top'"></div>
+            <div [ngClass]="menu.active?'icon-active':'icon'">
+                <div [ngClass]="menu.active?'icon-container-active':'icon-container'">
+                    <span class="material-icons">
+                        {{menu.icon}}
+                    </span>
+                    <div class="text-container"> {{menu.title}}</div>
+
+                </div>
+            </div>
+            <div [ngClass]="menu.active?'bottom-active':'bottom'"></div>
+
+        </div>
+
+    </div>
+
+</div>

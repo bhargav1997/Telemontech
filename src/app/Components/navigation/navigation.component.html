@@ -1,0 +1,20 @@
+<ul id="nav" class="nav main-menu menu navbar-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a [routerLink]="['/services']">Our Services</a>
+    </li>
+    <li><a [routerLink]="['/portfolio']">Our Portfolio</a></li>
+    <li class="icon-active"><a href="#">Blog</a>
+        <ul class="sub-menu">
+            <li><a [routerLink]="['/blog']">Blog Grid</a></li>
+            <li><a [routerLink]="['/blog-single']">Blog Single</a>
+            </li>
+        </ul>
+    </li>
+    <li class="icon-active"><a href="#">Pages</a>
+        <ul class="sub-menu">
+            <li><a [routerLink]="['/about']">About Us</a></li>
+            <li><a [routerLink]="['/error']">404</a></li>
+        </ul>
+    </li>
+    <li><a [routerLink]="['/contact']">Contact Us</a></li>
+</ul>

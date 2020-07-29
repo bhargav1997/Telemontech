@@ -1,0 +1,11 @@
+<app-dashboard-header (myClick)="viewBlog($event)" [title]="'Blog'" [back]="mode=='create'?true:false">
+    <div class="blog-create" (click)="createBlog()" *ngIf="mode=='view'">
+        <span class="material-icons">
+            add_circle
+        </span>
+        Create Blog
+    </div>
+
+</app-dashboard-header>
+<app-create-blog *ngIf="mode=='create'" (valueChange)='viewBlog($event)'></app-create-blog>
+<app-view-blog *ngIf="mode=='view'"></app-view-blog>
